@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="id">
+  <title>A Special Gift For You ❤️</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Romantic & Commercial - Toko Hadiah Romantis</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="navbar">
+        <div class="logo">
+          <h1>💝 A Gift for You 💝</h1>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#beranda">🏠 Beranda</a></li>
+          <li><a href="#hadiah">🎁 Hadiah</a></li>
+          <li><a href="#pesan">💌 Pesan</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="hero">
+      <div class="floating-hearts"></div>
+      <div class="hero-content">
+        <h1>💝 Untuk Kamu yang Spesial 💝</h1>
+        <p>✨ Sebuah hadiah kecil untuk mengungkapkan rasa terima kasihku ✨</p>
+        <a href="#hadiah" class="cta-button">🎁 Lihat Hadiahmu</a>
+      </div>
+    </section>
+
+    <!-- Hadiah Section -->
+    <section id="hadiah" class="products">
+      <h2>🌟 Hadiah Spesial Untukmu 🌟</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img
+            src="Round Bouquet Spiderman.jpeg"
+            alt="Buket Bunga Kesukaanmu"
+          />
+          <h3>💐 Buket Bunga Kesukaanmu</h3>
+          <p>Silahkan pilih buket kesukaan kamu 😊</p>
+          <a href="https://id.shp.ee/adL2gY6" target="_blank" class="buy-button"
+            >💝 Pilih Buket</a
+          >
+        </div>
+        <div class="product-card">
+          <img
+            src="Random Other _ Mystery Box $25 _ $50 _ Color_ Silver _ Size_ Os.jpeg"
+            alt="Box Kejutan"
+          />
+          <h3>🎀 Box Misterius</h3>
+          <p>
+            Pada pilihan ini aku sengaja ingin memberikan kamu sebuah kejutan 🥰
+          </p>
+          <a href="https://id.shp.ee/QDmsLFP" target="_blank" class="buy-button"
+            >💝 Pilih Box</a
+          >
+        </div>
+        <div class="product-card">
+          <img src="Trapped By Desire - Sseaseaguls.jpeg" alt="Novel Spesial" />
+          <h3>💝 Novel Special Genre Kesukaanmu</h3>
+          <p>Aku merekomendasikan novel genre kesukaan kamu 😊</p>
+          <a href="https://id.shp.ee/Y99dR6r" target="_blank" class="buy-button"
+            >💝 Pilih Novel</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Pesan Section -->
+    <section id="pesan" class="about">
+      <h2>💌 Pesan Untukmu 💌</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            Hi monicc... 💕<br /><br />
+            i Hope you are happy with this year's Eid gift giving,<br />
+            I just wanted to share the fun by giving some small gifts to you.<br />
+            I love you sincerely... 💕
+          </p>
+        </div>
+        <div class="about-features">
+          <div class="feature">
+            <i class="fas fa-heart"></i>
+            <h3>💝 Kamu Spesial</h3>
+          </div>
+          <div class="feature">
+            <i class="fas fa-star"></i>
+            <h3>⭐ Kamu Berharga</h3>
+          </div>
+          <div class="feature">
+            <i class="fas fa-heart"></i>
+            <h3>💕 Kamu Dicintai</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>💝 Untuk Kamu 💝</h3>
+          <p>
+            ✨Semoga hadiah ini bisa menjadi sebuah kenangan yang membekas
+            dihatimu🥰
+          </p>
+        </div>
+        <div class="footer-section">
+          <h3>💌 Love You 💌</h3>
+          <div class="social-links">
+            <a href="#"><i class="fas fa-heart"></i></a>
+            <a href="#"><i class="fas fa-heart"></i></a>
+            <a href="#"><i class="fas fa-heart"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>💝 Dibuat dengan cinta untukmu 💝</p>
+      </div>
+    </footer>
+    <script>
+      // Fungsi untuk mengecek apakah elemen terlihat di viewport
+      function isElementInViewport(el) {
+        const rect = el.getBoundingClientRect();
+        return (
+          rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <=
+            (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.right <=
+            (window.innerWidth || document.documentElement.clientWidth)
+        );
+      }
+
+      // Fungsi untuk menangani scroll
+      function handleScroll() {
+        const sections = document.querySelectorAll("section");
+        sections.forEach((section) => {
+          if (isElementInViewport(section)) {
+            section.classList.add("visible");
+          }
+        });
+      }
+
+      // Jalankan saat halaman dimuat
+      window.addEventListener("load", handleScroll);
+      // Jalankan saat di-scroll
+      window.addEventListener("scroll", handleScroll);
+    </script>
+  </body>
+</html>
